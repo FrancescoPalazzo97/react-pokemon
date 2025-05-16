@@ -1,0 +1,181 @@
+:root {
+  --g-1: calc(100% / 12);
+  --g-2: calc(var(--g) * 2);
+  --g-3: calc(var(--g) * 3);
+  --g-4: calc(var(--g) * 4);
+  --g-5: calc(var(--g) * 5);
+  --g-6: calc(var(--g) * 6);
+  --g-7: calc(var(--g) * 7);
+  --g-8: calc(var(--g) * 8);
+  --g-9: calc(var(--g) * 9);
+  --g-10: calc(var(--g) * 10);
+  --g-11: calc(var(--g) * 11);
+  --g-12: calc(var(--g) * 12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #1a1a1a;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LAYOUT */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 var(--g-1);
+  max-width: var(--g-1);
+}
+
+.col-1 {
+  flex: 0 0 var(--g-1);
+  max-width: var(--g-1);
+}
+
+.col-2 {
+  flex: 0 0 var(--g-2);
+  max-width: var(--g-2);
+}
+
+.col-3 {
+  flex: 0 0 var(--g-3);
+  max-width: var(--g-3);
+}
+
+.col-4 {
+  flex: 0 0 var(--g-4);
+  max-width: var(--g-4);
+}
+
+.col-5 {
+  flex: 0 0 var(--g-5);
+  max-width: var(--g-5);
+}
+
+.col-6 {
+  flex: 0 0 var(--g-6);
+  max-width: var(--g-6);
+}
+
+.col-7 {
+  flex: 0 0 var(--g-7);
+  max-width: var(--g-7);
+}
+
+.col-8 {
+  flex: 0 0 var(--g-8);
+  max-width: var(--g-8);
+}
+
+.col-9 {
+  flex: 0 0 var(--g-9);
+  max-width: var(--g-9);
+}
+
+.col-10 {
+  flex: 0 0 var(--g-10);
+  max-width: var(--g-10);
+}
+
+.col-11 {
+  flex: 0 0 var(--g-11);
+  max-width: var(--g-11);
+}
+
+.col-12 {
+  flex: 0 0 var(--g-12);
+  max-width: var(--g-12);
+}
+
+/* FLEX */
+
+.d-flex {
+  display: flex;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.j-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* UTILITY */
+
+.text-center {
+  text-align: center;
+}
+
+/* NAVBAR */
+
+#up-nav {
+  padding: 20px 0;
+  background-color: #9F5F87;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.pokeball-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#bottom-nav {
+  padding: 20px 0;
+  background-color: #7A3E65;
+}
+
+#bottom-nav a {
+  filter: brightness(80%);
+}
+
+#bottom-nav a:hover {
+  filter: none;
+}
+
+#bottom-nav a.active {
+  color: #F2F2F2;
+  font-weight: 700;
+  filter: none;
+}
